@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Main from './components/Main';
+
+import styled from 'styled-components'
+
+const Footer = styled.footer` 
+  text-align:center;
+  color:#cacaca;
+  padding:20px 0;
+  background:#333;
+  overflow:hidden;
+`
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Main />
+      <Footer>
+        김찬호 포트폴리오 페이지입니다.
+      </Footer>
     </div>
   );
 }
